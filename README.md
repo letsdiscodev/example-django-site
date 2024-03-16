@@ -1,7 +1,5 @@
 # Example Django Site - Deployed with Disco
 
----
-
 ### setting up the project locally
 
 - create a new postgres database locally ([look here for more](#you-need-a-postgresql-database))
