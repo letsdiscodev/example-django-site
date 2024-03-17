@@ -1,7 +1,5 @@
 from .base import *
 
-DEBUG = True
-
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # default logging doesn't log to console with DEBUG=False
