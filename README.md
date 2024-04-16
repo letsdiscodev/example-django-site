@@ -26,7 +26,7 @@ python manage.py runserver
 
 ### deploying this with disco
 
-[See the documentation](https://docs.letsdisco.dev/guides/deploying-a-django-site) to deploy this with Disco.
+[See the documentation](https://docs.letsdisco.dev/deployment-guides/django-site) to deploy this with Disco.
 
 ---
 
