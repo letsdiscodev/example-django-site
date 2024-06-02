@@ -4,12 +4,14 @@
     {
         "web":
         {
-            "port": 8000
-        },
-        "hook:deploy:start:before":
-        {
-            "type": "command",
-            "command": "python manage.py migrate"
+            "port": 8000,
+            "volumes":
+            [
+                {
+                    "name": "sqlite-data",
+                    "destinationPath": "/sqlitedata"
+                }
+            ]
         }
     }
 }
