@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+# each row in the database is one hit
+class HitCounterModel(models.Model):
+    pass
