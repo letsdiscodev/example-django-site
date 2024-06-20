@@ -1,17 +1,18 @@
 {
     "version": "1.0",
-    "services":
-    {
-        "web":
-        {
+    "services": {
+        "web": {
             "port": 8000,
-            "volumes":
-            [
+            "volumes": [
                 {
                     "name": "sqlite-data",
                     "destinationPath": "/sqlitedata"
                 }
             ]
+        },
+        "hook:deploy:start:before": {
+            "type": "command",
+            "command": "python manage.py migrate"
         }
     }
 }
