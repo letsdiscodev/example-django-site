@@ -12,7 +12,13 @@
         },
         "hook:deploy:start:before": {
             "type": "command",
-            "command": "python manage.py migrate"
+            "command": "python manage.py migrate",
+            "volumes": [
+                {
+                    "name": "sqlite-data",
+                    "destinationPath": "/sqlitedata"
+                }
+            ]
         }
     }
 }
